@@ -56,16 +56,30 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: none;
+
+}
+@media (max-width:600px) {
+  .form--button{
+    grid-column: auto;
+  }
 }
 
 .meme {
   position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .meme--image {
   max-width: 100%;
   border-radius: 3px;
-  margin-top: 1em;
+  /* margin-top: 1em; */
+  margin: 1em auto 0;
 }
 
 .meme--text {
